@@ -16,6 +16,9 @@ controlBtns.forEach(button => button.addEventListener("click", () => {
 
     player = button.textContent
     computersTurn();
+    playerDiv.textContent = `Player: ${player}`;
+    computerDiv.textContent = `Computer: ${computer}`;
+    resultDiv.textContent = checkWin();
 }));
 
 function computersTurn(){
@@ -32,5 +35,20 @@ function computersTurn(){
         case 3:
             computer = "Scissors";
             break;       
+    }
+}
+
+function checkWin(){
+    if(player === computer){
+        return "Draw";
+    }
+    else if(computer === "Rock"){
+        return (player === "Paper") ? "You Win" : "You Lose"
+    }
+    else if(computer === "Paper"){
+        return (player === "Scissors") ? "You Win" : "You Lose"
+    }
+    else if(computer === "Scissors"){
+        return (player === "Rock") ? "You Win" : "You Lose"
     }
 }
