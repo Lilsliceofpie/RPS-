@@ -27,13 +27,13 @@ function computersTurn(){
 
     switch(randNum){
         case 1:
-            computer = "Rock";
+            computer = "✊";
             break;
         case 2:
-            computer = "Paper";
+            computer = "🤚";
             break;
         case 3:
-            computer = "Scissors";
+            computer = "✌";
             break;       
     }
 }
@@ -42,13 +42,13 @@ function checkWin(){
     if(player === computer){
         return "Draw";
     }
-    else if(computer === "Rock"){
-        return (player === "Paper") ? "You Win" : "You Lose"
+    else if(computer === "✊"){
+        return (player === "🤚") ? "You Win" : "You Lose"
     }
-    else if(computer === "Paper"){
-        return (player === "Scissors") ? "You Win" : "You Lose"
+    else if(computer === "🤚"){
+        return (player === "✌") ? "You Win" : "You Lose"
     }
-    else if(computer === "Scissors"){
-        return (player === "Rock") ? "You Win" : "You Lose"
+    else if(computer === "✌"){
+        return (player === "✊") ? "You Win" : "You Lose"
     }
 }
