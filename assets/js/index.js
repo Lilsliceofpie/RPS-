@@ -11,9 +11,11 @@ const compScore = document.querySelector("comp");
 
 let player;
 let computer;
-let result;
-let score;
 
+/**
+* Adds event listeners for control buttons, then calls
+* functions to generate computers choice and decide winner
+*/
 controlBtns.forEach(button => button.addEventListener("click", () => {
 
     player = button.textContent
@@ -27,6 +29,9 @@ controlBtns.forEach(button => button.addEventListener("click", () => {
     compScore.textContent = `Comp: ${compNewScore}`;
 }));
 
+/**
+* Generates the computers choice
+*/
 function computersTurn(){
 
     const randNum = Math.floor(Math.random() * 3) + 1;
@@ -44,6 +49,10 @@ function computersTurn(){
     }
 }
 
+/**
+* checks to see who winner is, then gives string to
+* resultDiv
+*/
 function checkWin(){
     if(player === computer){
         return "Draw";
@@ -59,6 +68,10 @@ function checkWin(){
     }
 }
 
+/**
+* Function to tally user's score
+*/
+
 function incrementYourScore(){
     if(resultDiv.textContent == "You Win"){
         let yourNewScore = parseInt(document.getElementById("you").textContent);
@@ -66,6 +79,9 @@ function incrementYourScore(){
     }
 }  
 
+/**
+* Function to tally computer's score
+*/
 function incrementCompScore(){
     if(resultDiv.textContent == "You Lose"){
         let compNewScore = parseInt(document.getElementById("comp").textContent);
