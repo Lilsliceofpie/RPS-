@@ -20,8 +20,8 @@ controlBtns.forEach(button => button.addEventListener("click", () => {
 
     player = button.textContent
     computersTurn();
-    playerDiv.textContent = `Player: ${player}`;
-    computerDiv.textContent = `Computer: ${computer}`;
+    playerDiv.textContent = `${player}`;
+    computerDiv.textContent = `${computer}`;
     resultDiv.textContent = checkWin();
     incrementYourScore();
     incrementCompScore();
@@ -58,13 +58,13 @@ function checkWin(){
         return "Draw";
     }
     else if(computer === "✊"){
-        return (player === "🤚") ? "You Win" : "You Lose"
+        return (player === "🤚") ? "Victory" : "Defeat"
     }
     else if(computer === "🤚"){
-        return (player === "✌") ? "You Win" : "You Lose"
+        return (player === "✌") ? "Victory" : "Defeat"
     }
     else if(computer === "✌"){
-        return (player === "✊") ? "You Win" : "You Lose"
+        return (player === "✊") ? "Victory" : "Defeat"
     }
 }
 
@@ -73,7 +73,7 @@ function checkWin(){
 */
 
 function incrementYourScore(){
-    if(resultDiv.textContent == "You Win"){
+    if(resultDiv.textContent == "Victory"){
         let yourNewScore = parseInt(document.getElementById("you").textContent);
         document.getElementById("you").innerText = ++yourNewScore;
     }
@@ -83,7 +83,7 @@ function incrementYourScore(){
 * Function to tally computer's score
 */
 function incrementCompScore(){
-    if(resultDiv.textContent == "You Lose"){
+    if(resultDiv.textContent == "Defeat"){
         let compNewScore = parseInt(document.getElementById("comp").textContent);
         document.getElementById("comp").innerText = ++compNewScore;
     }
