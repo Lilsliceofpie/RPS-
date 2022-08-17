@@ -1,1 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+/*Main view styles*/
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Roboto', open-sans, sans-serif;
+    margin: 0;
+}
+/*header and footer styles*/
+header {
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    width: 100%;   
+}
+
+#gameSection {
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.controlBtn {
+    display: inline-block;
+    line-height: 30px;
+    width: 30%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
+
+.controlBtn:hover {
+    transform: scale(1.3);
+}
