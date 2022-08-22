@@ -4,7 +4,7 @@
 html {
     min-height: 100%;
     position: relative;
-    color: white;
+    color: #fff;
 }
 
 body {
@@ -12,10 +12,15 @@ body {
     font-family: 'Roboto', open-sans, sans-serif;
     margin: 0;
 }
+
+h1 {
+    margin: 0px;
+}
 /*header and footer styles*/
 header {
     text-align: center;
     height: 50px;
+    padding-bottom: 5%;
 }
 
 footer {
@@ -34,7 +39,7 @@ footer {
 }
 
 #controlDiv {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .controlBtn {
@@ -50,22 +55,26 @@ footer {
 }
 
 .controlBtn:hover {
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 
 #playerDiv {
     float: left;
-    font-size: 6rem;
+    font-size: 5rem;
     width: 45%;
+    max-height: 106px;
 }
 
 #computerDiv {
     float: right;
-    font-size: 6rem;
+    font-size: 5rem;
     width: 45%;
+    max-height: 106px;
 }
 
 #resultDiv {
     text-align: center;
+    width: 100%;
+    clear: both;
     
 }
