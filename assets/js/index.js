@@ -4,7 +4,6 @@
 const playerDiv = document.querySelector("#playerDiv");
 const computerDiv = document.querySelector("#computerDiv");
 const resultDiv = document.querySelector("#resultDiv");
-const scoreDiv = document.querySelector("#scoreDiv")
 const controlBtns = document.querySelectorAll(".controlBtn");
 const yourScore = document.querySelector("you");
 const compScore = document.querySelector("comp");
@@ -18,7 +17,7 @@ let computer;
 */
 controlBtns.forEach(button => button.addEventListener("click", () => {
 
-    player = button.textContent
+    player = button.textContent;
     computersTurn();
     playerDiv.textContent = `${player}`;
     computerDiv.textContent = `${computer}`;
@@ -58,13 +57,13 @@ function checkWin(){
         return "Draw";
     }
     else if(computer === "✊"){
-        return (player === "🤚") ? "Victory" : "Defeat"
+        return (player === "🤚") ? "Victory" : "Defeat";
     }
     else if(computer === "🤚"){
-        return (player === "✌") ? "Victory" : "Defeat"
+        return (player === "✌") ? "Victory" : "Defeat";
     }
     else if(computer === "✌"){
-        return (player === "✊") ? "Victory" : "Defeat"
+        return (player === "✊") ? "Victory" : "Defeat";
     }
 }
 
