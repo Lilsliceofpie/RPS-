@@ -4,6 +4,7 @@ Rock Paper Scissors is an interactive webpage-game based off the popular real-li
 ## Rules
 Each of the three choices beats one of the other two, and loses to the other. Rock beats scissors, scissors beats paper, paper beats rock.
 
+![](assets/screenshots/Screenshot%20(42).png)
 
 ## Features
 
@@ -31,19 +32,19 @@ Each of the three choices beats one of the other two, and loses to the other. Ro
   - The foot of the page displays the rules of the game to the user.
 
 ## Testing
-1. I tested that the site works in different browsers: chrome, Internet explorer, DuckDuckGo.
-2. I confimed that the site is responsive and functions on all standard screen sizes using Dev. tools.
-3. I confirmed that all sections of the site are readable and easy to understand.
-4. I confirmed that the functions to automate the computers choice and tally the score work as intended.
+- I tested that the site works in different browsers: chrome, Internet explorer, DuckDuckGo.
+- I confimed that the site is responsive and functions on all standard screen sizes using Dev. tools.
+- I confirmed that all sections of the site are readable and easy to understand.
+- I confirmed that the functions to automate the computers choice and tally the score work as intended.
 
 ## Bugs
-1. Initially the placeholder question marks were displaying below their containing divs, setting their margin to 0 in CSS fixed the issue.
+- Initially the placeholder question marks were displaying below their containing divs, setting their margin to 0 in CSS fixed the issue.
 
 ## Validator testing
-1. HTML: No errors were returned when passed through the official W3C validator.
-2. CSS: No errors were returned when passed through the official (jigsaw) validator.
-3. Javascript: No errors were returned when passed through the JSHint JavaScript Validator
-4. Accessibility: Confirmed that colours and fonts chosen are easy to read and accessible by running it through lighthouse in Dev. tools.
+- HTML: No errors were returned when passed through the official W3C validator.
+- CSS: No errors were returned when passed through the official (jigsaw) validator.
+- Javascript: No errors were returned when passed through the JSHint JavaScript Validator
+- Accessibility: Confirmed that colours and fonts chosen are easy to read and accessible by running it through lighthouse in Dev. tools.
 
 ![](assets/screenshots/Screenshot%20(35).png)
 ![](assets/screenshots/Screenshot%20(36).png)
@@ -52,8 +53,7 @@ Each of the three choices beats one of the other two, and loses to the other. Ro
 
 ## Deployment
 - The site was deployed to GitHub pages. The live link can be found here
-
+__-https://lilsliceofpie.github.io/RPS-/__
 ## Credits
-- Some of the code to add event listeners in the index.js file was taken from a youtube video by the
-channel "Bro Code". Here is the link to the video 
+- Some of the code to add event listeners, and for the function "computersTurn" in the index.js file was taken from a youtube video by the channel "Bro Code". Here is a link to the video 
 __-https://youtu.be/n1_vHArDBRA__
